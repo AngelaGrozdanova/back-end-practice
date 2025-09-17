@@ -1,0 +1,19 @@
+<section class="form-container">
+  <h2>Register</h2>
+  <form action="/auth/register" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="username" />
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" />
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" />
+
+    <label for="password">Repeat Password:</label>
+    <input type="password" id="re-password" name="confirmPass" />
+
+    <button type="submit">Register</button>
+  </form>
+  <p>Already have an account? <a href="/auth/login">Login here</a>.</p>
+</section>

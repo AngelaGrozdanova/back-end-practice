@@ -1,0 +1,14 @@
+<section class="featured-product">
+  <h2>Your destination for luxurious, skin-loving cosmetics crafted with care</h2>
+  <h2>Discover Our Collection</h2>
+  <div class="products">
+  {{#if cosmetics}}
+            {{#each cosmetics}}
+                {{>product-item}}
+            {{/each}}
+        {{else}}
+           <p class="no-post">There are no products found yet!</p>
+        {{/if}}
+    <!-- <p class="no-post">There are no products found yet!</p> -->
+  </div>
+</section>
