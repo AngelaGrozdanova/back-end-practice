@@ -1,0 +1,31 @@
+        <section id="edit-container">
+            <div class="edit-container-info">
+                <h1>Edit Announcement</h1>
+                <form action="/volcanos/{{_id}}/edit" method="post">
+                    <label>Name:</label>
+                    <input type="text" id="name" name="name" value="{{name}}">
+                    <label>Location:</label>
+                    <input type="text" id="location" name="location" value="{{location}}">
+                    <label>Elevation:</label>
+                    <input type="number" id="elevations" name="elevation" value="{{elevation}}">
+                    <label>Year of Last Eruption:</label>
+                    <input type="number" id="last-year-eruption" name="lastEruption" value="{{lastEruption}}">
+                    <label>Image:</label>
+                    <input type="text" id="image" name="image"
+                        value="{{image}}">
+          <label>Volcano Type:</label>
+<select id="typeVolcano" name="typeVolcano">
+    <option value="Supervolcanoes" {{#if (eq typeVolcano "Supervolcanoes")}}selected{{/if}}>Supervolcanoes</option>
+    <option value="Submarine" {{#if (eq typeVolcano "Submarine")}}selected{{/if}}>Submarine</option>
+    <option value="Subglacial" {{#if (eq typeVolcano "Subglacial")}}selected{{/if}}>Subglacial</option>
+    <option value="Mud" {{#if (eq typeVolcano "Mud")}}selected{{/if}}>Mud</option>
+    <option value="Stratovolcanoes" {{#if (eq typeVolcano "Stratovolcanoes")}}selected{{/if}}>Stratovolcanoes</option>
+    <option value="Shield" {{#if (eq typeVolcano "Shield")}}selected{{/if}}>Shield</option>
+</select>
+
+                    <label>Description:</label>
+                    <textarea id="description" name="description" placeholder="...">{{description}}</textarea>
+                    <input type="submit" id="btn" value="Submit"></input>
+                </form>
+            </div>
+        </section>

@@ -1,0 +1,19 @@
+<div class="register-box">
+  <h1>Register</h1>
+  <form action="/auth/register" method="post">
+    <label>Username</label>
+    <input type="text" name="name" placeholder="Username.." />
+    <label>Email</label>
+    <input type="text" name="email" placeholder="Email.." />
+    <label>Password</label>
+    <input type="password" name="password" placeholder="Password.." />
+    <label>Confirm Password</label>
+    <input
+      type="password"
+      name="confirmPass"
+      placeholder="Confirm Password.."
+    />
+    <input type="submit" value="Submit" />
+  </form>
+  <p>Already have an account? <a href="/auth/login">Login here</a></p>
+</div>
