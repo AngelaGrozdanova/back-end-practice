@@ -1,0 +1,36 @@
+<section id="my-posts">
+  <h1>My Cars Posts</h1>
+
+  <div class="my-container">
+    {{#if myCars.length}}
+      {{#each myCars}}
+        <div class="my-card">
+          <div class="card-header">
+            <img src="{{image}}" />
+          </div>
+          <div class="card-body">
+            <span class="tag">Top Speed: {{topSpeed}} kmph</span>
+            <h4>
+              {{model}}
+            </h4>
+            <div class="user">
+              <div class="user-info">
+                <h5>Manufacturer: {{manufacturer}}</h5>
+                <small>Engine: {{engine}}</small>
+                <a href="/cars/{{_id}}/details" class="details_btn">Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      {{/each}}
+    {{else}}
+      <div class="no-posts">
+        <p class="no-cars">There are no own posts yet...</p>
+      </div>
+    {{/if}}
+    <!-- If there are still no posts in the database display: -->
+    <!-- <div class="no-posts">
+                        <p class="no-cars">There are no own posts yet....</p>
+                    </div> -->
+  </div>
+</section>

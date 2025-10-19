@@ -1,0 +1,22 @@
+<section class="hero">
+  <h2><span class="green">La Tavola Italiana</span>
+    <span class="white"> Where Italian </span><span class="red">Recipes Come to
+      Life</span>
+  </h2>
+  <a href="/recipes/catalog" class="btn">Explore Recipes</a>
+</section>
+
+<section class="featured-recipes">
+  <h2>Featured Recipes</h2>
+  <div class="recipes">
+  {{#if recipes}}
+            {{#each recipes}}
+                {{>recipes-card}}
+            {{/each}}
+        {{else}}
+          <p class="no-post">There are no recipes found yet!</p>
+        {{/if}}
+
+    <!-- <p class="no-post">There are no recipes found yet!</p> -->
+  </div>
+</section>

@@ -1,0 +1,45 @@
+<section class="search-container">
+  <h2>Search Recipes</h2>
+  <form action="/search">
+    <input
+      type="text"
+      id="search"
+      name="search"
+      placeholder="Search for recipes..."
+    />
+    <button type="submit">Search</button>
+  </form>
+  <div class="search-results">
+
+{{#if recipes}}
+            {{#each recipes}}
+                {{>recipes-card}}
+            {{/each}}
+        {{else}}
+         <p class="no-match">There are no recipes found yet!</p>
+        {{/if}}
+
+    {{!-- <article class="recipe">
+      <img
+        src="https://static01.nyt.com/images/2021/02/14/dining/carbonara-horizontal/carbonara-horizontal-square640-v2.jpg"
+        alt="Spaghetti Carbonara"
+      />
+      <h3>Spaghetti Carbonara</h3>
+      <p>A classic Italian pasta dish made with eggs, cheese, pancetta, and
+        pepper.</p>
+      <a href="#">Read More</a>
+    </article>
+    <article class="recipe">
+      <img
+        src="https://media.cnn.com/api/v1/images/stellar/prod/210211141204-05-classic-italian-dishes.jpg?q=w_1160,c_fill/f_webp"
+        alt="Chicken Curry"
+      />
+      <h3>Lasagna Bolognese</h3>
+      <p>Layered pasta with rich meat sauce and béchamel, baked to perfection.</p>
+      <a href="#">Read More</a>
+    </article> --}}
+    <!-- Add more search results here -->
+
+    <!-- <p class="no-match">There are no recipes found yet!</p> -->
+  </div>
+</section>
