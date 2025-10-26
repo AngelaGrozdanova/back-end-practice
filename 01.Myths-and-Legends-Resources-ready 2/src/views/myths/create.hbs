@@ -1,0 +1,59 @@
+<main class="create">
+  <!-- create Page (Only for logged-in users) -->
+  <section id="create">
+    <div class="form">
+      <h2>create Myth or Legend</h2>
+      <form class="create-form" action="/myths/create-offer" method="post">
+        <input
+          type="text"
+          id="name"
+          placeholder="Name"
+          name="name"
+          value="{{name}}"
+        />
+        <input
+          type="text"
+          id="origin"
+          placeholder="Origin (e.g. Greek, Norse, Egyptian)"
+          name="origin"
+          value="{{origin}}"
+        />
+        <input
+          type="text"
+          id="role"
+          placeholder="Role"
+          name="role"
+          value="{{role}}"
+        />
+        <input
+          type="text"
+          id="myth-img"
+          placeholder="Image URL"
+          name="image"
+          value="{{image}}"
+        />
+        <input
+          type="text"
+          id="symbol"
+          placeholder="Symbol / Attribute"
+          name="symbol"
+          value="{{symbol}}"
+        />
+        <input
+          type="text"
+          id="era"
+          placeholder="Era or Period"
+          name="era"
+          value="{{era}}"
+        />
+        <textarea
+          id="description"
+          placeholder="Description..."
+          name="description"
+        >{{description}}</textarea>
+        <button type="submit">create</button>
+      </form>
+
+    </div>
+  </section>
+</main>

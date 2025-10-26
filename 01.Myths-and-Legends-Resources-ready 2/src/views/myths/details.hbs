@@ -1,0 +1,57 @@
+<main class="details">
+  <!-- Details page -->
+  <section id="details">
+    <div id="details-wrapper">
+      <p id="details-title">Name: {{name}}</p>
+      <div id="img-wrapper">
+        <img src="{{image}}" alt="{{name}}" />
+      </div>
+      <div id="info-wrapper">
+        <table>
+          <tr>
+            <td>
+              <p>
+                Origin:
+                <span id="details-origin">{{origin}}</span>
+              </p>
+            </td>
+            <td>
+              <p>Role:
+                <span id="details-role">{{role}}</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Symbol / Attribute:
+                <span id="details-symbol">{{symbol}}</span></p>
+            </td>
+            <td>
+              <p>Era: <span id="details-era">{{era}}</span></p>
+            </td>
+          </tr>
+        </table>
+        <p>Description:
+          <span id="details-description">
+            {{description}}
+          </span>
+        </p>
+      </div>
+
+      <!--Edit and Delete are only for creator-->
+      <div id="action-buttons">
+        {{#if user}}
+          {{#if isOwner}}
+            <a href="/myths/{{_id}}/edit" id="edit-btn">Edit</a>
+            <a href="/myths/{{_id}}/delete" id="delete-btn">Delete</a>
+          {{else}}
+            {{#if hasLiked}}
+              <p id="already-liked">You've already liked this legend!</p>
+            {{else}}
+              <a href="/myths/{{_id}}/like" id="like-btn">Like</a>
+            {{/if}}
+          {{/if}}
+        {{/if}}
+      </div>
+    </div>
+  </section>
+</main>

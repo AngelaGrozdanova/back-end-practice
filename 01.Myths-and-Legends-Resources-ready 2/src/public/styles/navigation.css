@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+body {
+  color: rgb(68, 67, 67);
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  background-image: url("../images/bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+  font-family: "Macondo", cursive;
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1em;
+  
+  
+}
+
+nav {
+display: flex;
+background: #1e889bc5;
+padding: 20px;
+border-radius: 20px;
+
+}
+
+nav a {
+  font-size: 1.5rem;
+  color: #0a0a0a;
+  font-weight: 400;
+}
+
+header a {
+  padding: 0 10px;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+header a:hover {
+  color: rgb(202, 203, 204);
+}
+
+footer {
+  background-color: #0a0a0a;
+  padding: 5px;
+  color: wheat;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.home {
+  display: flex;
+  justify-content: space-between;
+}
+
+#home {
+  width: 35%;
+  margin-left: 100px;
+  margin-top: 40px;
+  background-color: rgba(255, 255, 255, 0.333);
+  border-radius: 20px;
+  padding: 10px;
+  height: 60vh;
+}
+
+#home h1 {
+  font-style: italic;
+  font-size: 50px;
+color: wheat;
+  text-align: center;
+  margin-top: 50px;
+  text-shadow: 2px 2px black;
+}
+
+#home h2{
+  font-style: italic;
+  font-size: 27px;
+ color: wheat;
+  text-align: center;
+  text-shadow: 2px 2px black;
+}
+
+main #last-added {
+  background-color: rgba(255, 255, 255, 0.333);
+  width: 28vw;
+  margin-right: 100px;
+  margin-top: 40px;
+  border-radius: 20px;
+  padding: 10px;
+  height: 66vh;
+}
+
+main #last-added div {
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+  width: 28vw;
+  margin-bottom: 20px;
+  background-color: rgb(252, 238, 214);
+  border-radius: 30px;
+}
+
+main #last-added div img {
+  border-radius: 40%;
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  margin: 10px;
+}
+
+#text-content{
+  display: flex;
+  flex-direction: column;
+}
+
+main #last-added div a {
+  border: 5em;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+  -webkit-transform: translate(0);
+  transform: translate(0);
+  background-image: linear-gradient(45deg, #5dddee, #0080f8);
+  padding: 30px 15px;
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.438);
+  color: white;
+  width: 100px;
+  text-decoration: none;
+}
+
+main #last-added div p {
+  font-weight: bold;
+  width: 12vw;
+}
+
+
+
+
+
+#errorPage div {
+  text-align: center;
+  background-color: #0a0a0aea;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  padding: 30px;
+  margin: 10%;
+  margin-top: 100px;
+}
+
+#errorPage div h2 {
+  font-size: 70px;
+  color: #ffffff;
+}
+
+#errorPage div h3 {
+  font-size: 50px;
+  font-weight: lighter;
+  color: #124E78;
+}
+
+#errorPage div p {
+  font-weight: lighter;
+  color: #3073a3;
+}
+
+.no-post {
+  background-color: #5f3535c4;
+  color: white;
+  padding: 200px 20px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+
+.errorContainer {
+  position: fixed;
+  background: #124E78;
+  right: 100px;
+  min-width: 100px;
+  display: block;
+  z-index: 11111;
+  top: 80px;
+  text-align: center;
+  border-radius: 20px;
+  color: rgb(255, 255, 255);
+  height: auto;
+  width: 320px;
+  box-shadow: 0 5px 10px black;
+}
+
+.errorContainer > p {
+  background: #124E78;
+  font-size: 20px;
+  padding: 20px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.errorContainer {
+  -moz-animation: cssAnimation 0s ease-in 2s forwards;
+  /* Firefox */
+  -webkit-animation: cssAnimation 0s ease-in 2s forwards;
+  /* Safari and Chrome */
+  -o-animation: cssAnimation 0s ease-in 2s forwards;
+  /* Opera */
+  animation: cssAnimation 0s ease-in 2s forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes cssAnimation {
+  to {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+  }
+}
+
+@-webkit-keyframes cssAnimation {
+  to {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    padding: 0;
+  }
+}

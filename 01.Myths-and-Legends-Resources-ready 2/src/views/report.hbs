@@ -1,0 +1,34 @@
+<main class="report-section">
+  <section id="report-section">
+    <h2>Report</h2>
+    <ul class="report-list">
+      <!-- Display a li with information about every post (if any)-->
+      <ul id="report-list">
+
+ {{#if myths}}
+        {{#each myths}}
+          {{> report-card}}
+        {{/each}}
+      {{else}}
+        <h2 id="no-post">There are no myths and legends!</h2>
+      {{/if}}
+          {{!-- {{#if myths}}
+            {{#each myths}}
+                {{>report-card}}
+            {{/each}}
+        {{else}}
+          <h2 id="no-post">There are no myths and legends! </h2>
+        {{/if}} --}}
+
+      </ul>
+
+    </ul>
+
+    <!-- Display an h2 if there are no posts -->
+    <!-- <h2 id="no-post">There are no myths and legends! </h2> -->
+
+    <!-- Display an h2 if an error occurs -->
+    <!-- <h2 id="no-post">Error loading report! </h2> -->
+
+  </section>
+</main>

@@ -1,0 +1,61 @@
+<main class="edit">
+  <!-- Edit Page (Only for logged-in users) -->
+  <section id="edit">
+    <div class="form">
+      <h2>Edit Myth or Legend</h2>
+      <form class="edit-form" action="/myths/{{_id}}/edit" method="post">
+        <input
+          type="text"
+          id="name"
+          placeholder="Name"
+          name="name"
+          value="{{name}}"
+        />
+        <input
+          type="text"
+          id="origin"
+          placeholder="Origin (e.g. Greek, Norse, Egyptian)"
+          name="origin"
+          value="{{origin}}"
+        />
+        <input
+          type="text"
+          id="role"
+          placeholder="Role"
+          value="{{role}}"
+          name="role"
+        />
+        <input
+          type="text"
+          id="myth-img"
+          placeholder="Image URL"
+          value="{{image}}"
+          name="image"
+        />
+        <input
+          type="text"
+          id="symbol"
+          placeholder="Symbol / Attribute"
+          value="{{symbol}}"
+          name="symbol"
+        />
+        <input
+          type="text"
+          id="era"
+          placeholder="Era or Period"
+          value="{{era}}"
+          name="era"
+        />
+
+        <textarea
+          id="description"
+          placeholder="Description..."
+          name="description"
+        >{{description}}
+        </textarea>
+        <button type="submit">Edit</button>
+      </form>
+
+    </div>
+  </section>
+</main>

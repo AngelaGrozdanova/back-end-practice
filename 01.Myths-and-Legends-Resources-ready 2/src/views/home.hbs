@@ -1,0 +1,29 @@
+<main class="home">
+  <!-- Home page -->
+  <section id="home">
+    <h1>Welcome to Myth & Legends</h1>
+    <h2>From mighty gods to mythical creatures, Myth & Legends offers an
+      exclusive collection of stories and heroes, each with its own unique
+      origin and cultural significance.</h2>
+  </section>
+
+  <section id="last-added">
+    <!-- <p class="no-post">There are no myths and legends!</p> -->
+
+    {{#if myths}}
+      {{#each myths}}
+        <div>
+          <img src="{{image}}" />
+          <div id="text-content">
+            <p>Name: {{name}}</p>
+            <p>Origin: {{origin}}</p>
+          </div>
+          <a class="details-btn" href="/myths/{{_id}}/details">Details</a>
+        </div>
+      {{/each}}
+    {{else}}
+      <p class="no-post">There are no myths and legends!</p>
+    {{/if}}
+
+  </section>
+</main>
